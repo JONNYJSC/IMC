@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular el IMC</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <img width="300"
+        src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.clinicaciplex.com%2Fobesidad-que-debes-saber-del-indice-de-masa-corporal-imc-en-ciplex-extremadura-te-lo-contamos%2F&psig=AOvVaw2BKUIPW73bXeXS-xZr61UD&ust=1603384336468000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNiO0aGOxuwCFQAAAAAdAAAAABAD">
+    <form id="formulario" onsubmit="calcularIMC(); return false">
+        <label for="nombre">Escribe tu NOMBRE:</label>
+        <input type="text" id="nombre">
+        <br>
+        <label for="altura">Escribe tu ALTURA actual (cm):</label>
+        <input type="text" id="altura" required="required">
+        <br>
+        <label for="peso">Escribe tu PESO actual (kg):</label>
+        <input type="text" id="peso" required="required">
+        <br>
+        <button type="submit">Calcular IMC</button>
+        <p id="resultado"></p>
+    </form>
+
+    <script src="index.js"></script>
+    <script src="jquery.min.js"></script>
+</body>
+
+</html>
